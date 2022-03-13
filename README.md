@@ -18,16 +18,14 @@ import nltk
 import gensim
 
 url="C:/gensim-data/word2vec-google-news-300/word2vec-google-news-300.gz"
-#embeddings = gensim.models.KeyedVectors.load_word2vec_format(url, binary=False, unicode_errors='ignore')
 
-#!/usr/bin/python3
-# coding: utf-8
 from gensim.models.keyedvectors import KeyedVectors
 model = KeyedVectors.load_word2vec_format(url, binary=True)
-model.save_word2vec_format('GoogleNews-vectors-negative300', binary=False)```
+model.save_word2vec_format('GoogleNews-vectors-negative300', binary=False)
+```
+
 
 The result is this text file (actual size is about 43 MB): word2vec_content.zip
-
 
 
 The motivation of this project is to show words and phrases in word2vec. Normally it is a blackbox. It would be helpful to follow up projects like clustering.
