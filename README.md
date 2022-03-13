@@ -9,7 +9,7 @@ The Word2Vec model (300) trained on part of the Google News dataset, covering ap
 
 Download link : https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g
 After obtaining 3GB package, a following code used to extract words and phrases from Word2vec pretrained model:
-`from gensim import models
+```from gensim import models
 import gensim.downloader as api
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
@@ -17,14 +17,14 @@ import os
 import nltk
 import gensim
 
-url="C:/Users/makta/gensim-data/word2vec-google-news-300/word2vec-google-news-300.gz"
+url="C:/gensim-data/word2vec-google-news-300/word2vec-google-news-300.gz"
 #embeddings = gensim.models.KeyedVectors.load_word2vec_format(url, binary=False, unicode_errors='ignore')
 
 #!/usr/bin/python3
 # coding: utf-8
 from gensim.models.keyedvectors import KeyedVectors
 model = KeyedVectors.load_word2vec_format(url, binary=True)
-model.save_word2vec_format('GoogleNews-vectors-negative300', binary=False)`
+model.save_word2vec_format('GoogleNews-vectors-negative300', binary=False)```
 
 The result is this text file (actual size is about 43 MB): word2vec_content.zip
 
