@@ -28,7 +28,7 @@ model.save_word2vec_format('GoogleNews-vectors-negative300', binary=False)
 The result is this text file (actual size is about 43 MB): word2vec_content.zip
 
 
-The motivation of this project is to show words and phrases in word2vec. Normally it is a blackbox. It would be helpful to follow up projects like clustering.
+The motivation of this project is to show words and phrases in word2vec. Normally it is a blackbox. It would be helpful to follow up projects like clustering also.
 
 References:
 https://radimrehurek.com
